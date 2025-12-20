@@ -1,37 +1,10 @@
+"use client";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="layout-container flex h-full grow flex-col relative z-10">
-      {/* Header / Stats Bar */}
-      <header className="w-full px-6 py-6 flex justify-between items-center max-w-7xl mx-auto">
-        <div className="flex items-center gap-2">
-          <span className="material-symbols-outlined text-primary animate-pulse">
-            sports_esports
-          </span>
-          <span className="text-xs font-bold tracking-[0.2em] text-primary/80">
-            GAME_MODE: ON
-          </span>
-        </div>
-        <div className="flex gap-3">
-          <div className="flex h-8 items-center justify-center gap-x-2 rounded-full border border-primary/30 bg-primary/10 pl-4 pr-4 backdrop-blur-md">
-            <span className="material-symbols-outlined text-primary text-[16px]">
-              verified
-            </span>
-            <p className="text-white text-xs font-bold leading-normal tracking-wide">
-              LVL 19 DEV
-            </p>
-          </div>
-          <div className="flex h-8 items-center justify-center gap-x-2 rounded-full border border-accent/30 bg-accent/10 pl-4 pr-4 backdrop-blur-md hidden sm:flex">
-            <span className="material-symbols-outlined text-accent text-[16px]">
-              bolt
-            </span>
-            <p className="text-white text-xs font-bold leading-normal tracking-wide">
-              EXP: 98%
-            </p>
-          </div>
-        </div>
-      </header>
+      {/* Header Removed - Using Global GamifiedNavbar */}
 
       {/* Main Hero Content */}
       <main className="flex-1 flex flex-col justify-center items-center px-4 relative">
@@ -84,50 +57,7 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Footer / Inventory Slots */}
-      <footer className="w-full max-w-7xl mx-auto px-6 py-10">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6 border-t border-white/10 pt-8">
-          <div className="flex gap-4">
-            {/* Social "Items" */}
-            <a className="group relative" href="#">
-              <div className="w-12 h-12 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:border-primary hover:bg-primary/20 transition-all duration-300">
-                <span className="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">
-                  terminal
-                </span>
-              </div>
-              <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                GITHUB
-              </span>
-            </a>
-            <a className="group relative" href="#">
-              <div className="w-12 h-12 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:border-accent hover:bg-accent/20 transition-all duration-300">
-                <span className="material-symbols-outlined text-slate-400 group-hover:text-accent transition-colors">
-                  work
-                </span>
-              </div>
-              <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] text-accent opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                LINKEDIN
-              </span>
-            </a>
-            <a className="group relative" href="#">
-              <div className="w-12 h-12 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:border-secondary hover:bg-secondary/20 transition-all duration-300">
-                <span className="material-symbols-outlined text-slate-400 group-hover:text-secondary transition-colors">
-                  alternate_email
-                </span>
-              </div>
-              <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] text-secondary opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                CONTACT
-              </span>
-            </a>
-          </div>
-          <div className="text-center md:text-right">
-            <p className="text-slate-500 text-xs font-normal leading-normal tracking-wider">
-              SYSTEM VERSION 2.0.24 <br />
-              <span className="opacity-50">© 2024 HARNISH N DANGI</span>
-            </p>
-          </div>
-        </div>
-      </footer>
+      {/* Footer Removed - Using Global GamifiedFooter */}
     </div>
   );
 }

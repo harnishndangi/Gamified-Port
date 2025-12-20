@@ -31,20 +31,42 @@
 
   /* Keyframes */
   @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
   }
+
   @keyframes glow {
-    0% { box-shadow: 0 0 5px #36e27b, 0 0 10px #36e27b; }
-    100% { box-shadow: 0 0 20px #36e27b, 0 0 30px #36e27b; }
+    0% {
+      box-shadow: 0 0 5px #36e27b, 0 0 10px #36e27b;
+    }
+
+    100% {
+      box-shadow: 0 0 20px #36e27b, 0 0 30px #36e27b;
+    }
   }
+
   @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  
+
   /* Background Images */
-  --background-image-grid-pattern: linear-gradient(to right, #232d27 1px, transparent 1px), linear-gradient(to bottom, #232d27 1px, transparent 1px);
+  --background-image-grid-pattern: linear-gradient(to right, #232d27 1px, transparent 1px),
+  linear-gradient(to bottom, #232d27 1px, transparent 1px);
   --background-image-hex-pattern: url("data:image/svg+xml,%3Csvg width='24' height='40' viewBox='0 0 24 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40c5.523 0 10-4.477 10-10V10c0-5.523 4.477-10 10-10s10 4.477 10 10v20c0 5.523-4.477 10-10 10S0 35.523 0 30V40z' fill='%231a2e23' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
@@ -54,28 +76,26 @@
 }
 
 @utility text-3d {
-  text-shadow: 
-      1px 1px 0 #d946ef,
-      -1px -1px 0 #06b6d4;
+  text-shadow:
+    1px 1px 0 #d946ef,
+    -1px -1px 0 #06b6d4;
 }
 
 @utility scanlines {
-  background: linear-gradient(
-      to bottom,
-      rgba(255,255,255,0),
-      rgba(255,255,255,0) 50%,
-      rgba(0,0,0,0.2) 50%,
-      rgba(0,0,0,0.2)
-  );
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0) 50%,
+      rgba(0, 0, 0, 0.2) 50%,
+      rgba(0, 0, 0, 0.2));
   background-size: 100% 4px;
   pointer-events: none;
 }
 
 @utility bg-grid {
   background-size: 50px 50px;
-  background-image: 
-      linear-gradient(to right, rgba(54, 226, 123, 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(54, 226, 123, 0.05) 1px, transparent 1px);
+  background-image:
+    linear-gradient(to right, rgba(54, 226, 123, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(54, 226, 123, 0.05) 1px, transparent 1px);
 }
 
 @utility holographic-card {
@@ -85,12 +105,12 @@
   box-shadow: 0 0 20px rgba(54, 226, 123, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform-style: preserve-3d;
-}
 
-@utility holographic-card:hover {
-  box-shadow: 0 0 40px rgba(54, 226, 123, 0.15), inset 0 0 0 1px rgba(54, 226, 123, 0.3);
-  transform: translateY(-5px) scale(1.01) rotateX(2deg);
-  border-color: rgba(54, 226, 123, 0.6);
+  &:hover {
+    box-shadow: 0 0 40px rgba(54, 226, 123, 0.15), inset 0 0 0 1px rgba(54, 226, 123, 0.3);
+    transform: translateY(-5px) scale(1.01) rotateX(2deg);
+    border-color: rgba(54, 226, 123, 0.6);
+  }
 }
 
 @utility stat-bar-glow {
@@ -113,4 +133,16 @@
 
 @utility hexagon-inner {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+@utility layout-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@utility layout-content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }

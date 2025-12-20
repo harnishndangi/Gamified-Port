@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Spline_Sans, Noto_Sans } from "next/font/google";
 import "./globals.css";
+import GamifiedFooter from "@/components/GamifiedFooter";
+import GamifiedNavbar from "@/components/GamifiedNavbar";
 
 const splineSans = Spline_Sans({
   variable: "--font-spline-sans",
@@ -35,7 +37,9 @@ export default function RootLayout({
       <body
         className={`${splineSans.variable} ${notoSans.variable} antialiased bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden min-h-screen flex flex-col`}
       >
+        <GamifiedNavbar />
         {children}
+        <GamifiedFooter />
       </body>
     </html>
   );
