@@ -46,7 +46,7 @@ export default function Profile() {
 
                                 {/* Level Badge */}
                                 <div className="absolute -bottom-2 -right-2 bg-background-dark border border-primary text-primary px-3 py-1 rounded-full text-sm font-bold shadow-[0_0_10px_rgba(54,226,123,0.3)] hover:scale-110 transition-transform cursor-help" title="Current Level">
-                                    LVL. 24
+                                    LVL. 25
                                 </div>
                             </div>
                         </div>
@@ -103,7 +103,7 @@ export default function Profile() {
                                     <div className="absolute top-0 right-0 bottom-0 w-20 bg-gradient-to-r from-transparent to-white/40"></div>
                                 </div>
                             </div>
-                            <p className="text-text-muted text-xs font-mono">React, CSS, Tailwind</p>
+                            <p className="text-text-muted text-xs font-mono">React, CSS, Tailwind ,Nextjs , HTML    </p>
                         </div>
 
                         {/* Stat 2 */}
@@ -119,7 +119,7 @@ export default function Profile() {
                                     <div className="absolute top-0 right-0 bottom-0 w-20 bg-gradient-to-r from-transparent to-white/40"></div>
                                 </div>
                             </div>
-                            <p className="text-text-muted text-xs font-mono">Node, Python, Go</p>
+                            <p className="text-text-muted text-xs font-mono">Node, Python, Express</p>
                         </div>
 
                         {/* Stat 3 */}
@@ -135,7 +135,7 @@ export default function Profile() {
                                     <div className="absolute top-0 right-0 bottom-0 w-20 bg-gradient-to-r from-transparent to-white/40"></div>
                                 </div>
                             </div>
-                            <p className="text-text-muted text-xs font-mono">PostgreSQL, Mongo</p>
+                            <p className="text-text-muted text-xs font-mono">PostgreSQL, Mongo ,MySql , Pinocone</p>
                         </div>
 
                         {/* Stat 4 */}
@@ -153,6 +153,21 @@ export default function Profile() {
                             </div>
                             <p className="text-text-muted text-xs font-mono">Algorithms, Problem Solving</p>
                         </div>
+                        {/* Stat 5 */}
+                        <div className="flex flex-col gap-2 group/stat">
+                            <div className="flex justify-between items-end">
+                                <span className="text-white font-semibold flex items-center gap-2">
+                                    <span className="material-symbols-outlined text-primary text-[20px]">auto_awesome</span> ARC (AI/ML)
+                                </span>
+                                <span className="text-primary font-mono text-sm">90/100</span>
+                            </div>
+                            <div className="h-3 w-full bg-[#3d5245]/30 rounded-full overflow-hidden border border-white/5 relative">
+                                <div className="h-full bg-primary rounded-full relative w-[90%] stat-bar-glow group-hover/stat:brightness-110 transition-all duration-300">
+                                    <div className="absolute top-0 right-0 bottom-0 w-20 bg-gradient-to-r from-transparent to-white/40"></div>
+                                </div>
+                            </div>
+                            <p className="text-text-muted text-xs font-mono">LLMs, RAG, Agents, Vector DBs</p>
+                        </div>
                     </div>
 
                     {/* Bottom: Inventory / Badges */}
@@ -166,7 +181,7 @@ export default function Profile() {
                                 { icon: "code", name: "React" },
                                 { icon: "dns", name: "Node.js" },
                                 { icon: "terminal", name: "TypeScript" },
-                                { icon: "cloud", name: "AWS" },
+                                // { icon: "cloud", name: "AWS" },
                                 { icon: "palette", name: "Figma" },
                                 { icon: "rocket_launch", name: "Next.js" },
                             ].map((badge) => (

@@ -22,15 +22,15 @@ export default function TrophyRoomPage() {
             description: "Optimized a legacy application to achieve a 95+ Lighthouse performance score.",
             locked: false
         },
-        {
-            id: 3,
-            title: "Client King",
-            tier: "LEGENDARY",
-            tierColor: "text-yellow-500 bg-yellow-500/10",
-            icon: "crown",
-            description: "Delivered 50+ projects with consistent 5-star ratings and glowing reviews.",
-            locked: false
-        },
+        // {
+        //     id: 3,
+        //     title: "Client King",
+        //     tier: "LEGENDARY",
+        //     tierColor: "text-yellow-500 bg-yellow-500/10",
+        //     icon: "crown",
+        //     description: "Delivered 50+ projects with consistent 5-star ratings and glowing reviews.",
+        //     locked: false
+        // },
         {
             id: 4,
             title: "Full Stack Fury",
@@ -49,33 +49,33 @@ export default function TrophyRoomPage() {
             description: "Refactored a 10,000 line codebase to reduce technical debt by 40%.",
             locked: false
         },
-        {
-            id: 6,
-            title: "Rising Star",
-            tier: "COMMON",
-            tierColor: "text-primary bg-primary/10",
-            icon: "hotel_class",
-            description: "Recognized as a top open-source contributor in the community for 2023.",
-            locked: false
-        },
-        {
-            id: 7,
-            title: "Quest Master",
-            tier: "EPIC",
-            tierColor: "text-purple-400 bg-purple-400/10",
-            icon: "map",
-            description: "Resolved over 100 complex Jira tickets within a single sprint quarter.",
-            locked: false
-        },
-        {
-            id: 8,
-            title: "Cloud Warrior",
-            tier: "LEGENDARY",
-            tierColor: "text-yellow-500 bg-yellow-500/10",
-            icon: "cloud",
-            description: "Obtained AWS Solutions Architect certification and deployed serverless architecture.",
-            locked: false
-        }
+        // {
+        //     id: 6,
+        //     title: "Rising Star",
+        //     tier: "COMMON",
+        //     tierColor: "text-primary bg-primary/10",
+        //     icon: "hotel_class",
+        //     description: "Recognized as a top open-source contributor in the community for 2023.",
+        //     locked: false
+        // },
+        // {
+        //     id: 7,
+        //     title: "Quest Master",
+        //     tier: "EPIC",
+        //     tierColor: "text-purple-400 bg-purple-400/10",
+        //     icon: "map",
+        //     description: "Resolved over 100 complex Jira tickets within a single sprint quarter.",
+        //     locked: false
+        // },
+        // {
+        //     id: 8,
+        //     title: "Cloud Warrior",
+        //     tier: "LEGENDARY",
+        //     tierColor: "text-yellow-500 bg-yellow-500/10",
+        //     icon: "cloud",
+        //     description: "Obtained AWS Solutions Architect certification and deployed serverless architecture.",
+        //     locked: false
+        // }
     ];
 
     return (
@@ -91,8 +91,8 @@ export default function TrophyRoomPage() {
                             <div className="col-span-1 md:col-span-2 flex flex-wrap gap-4">
                                 <div className="flex flex-1 min-w-[140px] flex-col gap-1 rounded-xl border border-white/10 bg-card-dark p-4 items-center text-center shadow-lg hover:border-primary/50 transition-colors cursor-default group">
                                     <span className="material-symbols-outlined text-primary mb-1 group-hover:scale-110 transition-transform">military_tech</span>
-                                    <p className="text-2xl font-bold leading-tight">Lvl 99</p>
-                                    <p className="text-text-muted text-xs uppercase tracking-wider">Master Class</p>
+                                    <p className="text-2xl font-bold leading-tight">Lvl 25</p>
+                                    <p className="text-text-muted text-xs uppercase tracking-wider">Pro Class</p>
                                 </div>
                                 <div className="flex flex-1 min-w-[140px] flex-col gap-1 rounded-xl border border-white/10 bg-card-dark p-4 items-center text-center shadow-lg hover:border-primary/50 transition-colors cursor-default group">
                                     <span className="material-symbols-outlined text-primary mb-1 group-hover:scale-110 transition-transform">bolt</span>
@@ -101,7 +101,7 @@ export default function TrophyRoomPage() {
                                 </div>
                                 <div className="flex flex-1 min-w-[140px] flex-col gap-1 rounded-xl border border-white/10 bg-card-dark p-4 items-center text-center shadow-lg hover:border-primary/50 transition-colors cursor-default group">
                                     <span className="material-symbols-outlined text-primary mb-1 group-hover:scale-110 transition-transform">emoji_events</span>
-                                    <p className="text-2xl font-bold leading-tight">8 / 50</p>
+                                    <p className="text-2xl font-bold leading-tight">4 / 50</p>
                                     <p className="text-text-muted text-xs uppercase tracking-wider">Trophies Unlocked</p>
                                 </div>
                             </div>

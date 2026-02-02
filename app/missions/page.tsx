@@ -9,61 +9,108 @@ export default function MissionsPage() {
     const missions = [
         {
             id: 1,
-            title: "Studio Buddy",
+            title: "Study Buddy",
             rank: "S",
             status: "System Online",
-            description: "A real-time collaboration platform for remote student groups featuring live chat, shared workspaces, and synchronized task boards.",
+            description: "A collaborative education platform enabling students to find study partners, share resources, and learn together in real-time.",
             mode: "Hard Mode",
             difficultyColor: "text-primary",
-            bgImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuBJfR1xM-wG35nkHbWiQartdh-oEGl_KMEnv7HyfoEp8GUtTp-m2siscLjnUgKzIY9BWtBuxUZMoJgax06FWw17UGoYWKbr2LGyKrh7wkySnvawdPr7arJFN_p0heAxplbEMMexuSL_bOCjGdlKfV8eJnvXaO1bCamWNAOWbhpIMiFseIVt4kGZXN3wvFmPbP6bKV5FIJDQK04PjiSNnnga-MMTmhoZnw5_EK5ddm76kN7ELmKAUaaWO4OD_gDGB7iVzf7y5xYQF7Rm",
-            stats: 4,
+            bgImage: "/projects/study_buddy.png",
+            link: "https://study-buddy-lilac-omega.vercel.app/",
+            stats: 5,
             category: "fullstack",
             weapons: [
-                { name: "React Blade", icon: "code" },
-                { name: "Firebase Shield", icon: "local_fire_department" },
-                { name: "Tailwind Armor", icon: "style" }
+                { name: "React", icon: "code" },
+                { name: "Node.js", icon: "dns" },
+                { name: "Socket.io", icon: "sync" }
             ],
             loot: [
-                { icon: "add_circle", text: "+500 XP Real-time Database" },
-                { icon: "trophy", text: "Deployment Master Achievement" }
+                { icon: "group", text: "+500 Collaboration XP" },
+                { icon: "school", text: "Education Badges" }
             ]
         },
         {
             id: 2,
-            title: "Neon Market",
-            rank: "A",
+            title: "Universal Reasoning",
+            rank: "SS",
             status: "Operational",
-            description: "A full-stack e-commerce solution with integrated Stripe payments, inventory management dashboard, and user analytics.",
-            mode: "Medium Mode",
-            difficultyColor: "text-yellow-500",
-            bgImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuCV9t1g_trzC6eueMdUDjn3px2bjgx64sbTlC9xTGDDsZcdDdZ7Z1oKCwflz9heDG7mRw9t0rE9FTIVG2iYc7pqyY_JrVfgc4QXCdzLBjlt8r59pwweaFFEI7Fhv2J7WO9Whzr-NcckX-7TwJe_J83OWuSQ1lM5Orm7wGdV53f_EXb5FiTERDzlT2KU37xW3Ml8SITHq06pcKq46k1lsqxoN5g76REM-DOhnl2B_fMAzyPNElXj1we3ggt8PickEEbvWgPjRXmm_W6b",
+            description: "Advanced multi-agent AI chat interface capable of complex reasoning, task decomposition, and collaborative problem solving.",
+            mode: "God Mode",
+            difficultyColor: "text-purple-500",
+            bgImage: "/projects/universal_reasoning_engine.png",
+            link: "https://universal-reasoning-engine.vercel.app/",
             stats: 5,
             category: "fullstack",
             weapons: [
-                { name: "Next.js Rifle", icon: "javascript" },
-                { name: "Stripe API", icon: "payments" }
+                { name: "LLMs", icon: "psychology" },
+                { name: "Multi-Agent", icon: "hub" }
             ],
             loot: [
-                { icon: "add_circle", text: "+300 Gold (Revenue Tracking)" }
+                { icon: "auto_awesome", text: "+1000 AI Knowledge" },
+                { icon: "smart_toy", text: "Reasoning Module" }
             ]
         },
         {
             id: 3,
-            title: "Cerebro Bot",
-            rank: "B",
-            status: "Archived",
-            description: "An intelligent conversational agent powered by OpenAI's GPT-4, designed to assist developers with debugging code snippets.",
-            mode: "Normal Mode",
-            difficultyColor: "text-green-400",
-            bgImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuCbqnHS643PKzdopU9VmdEMax96ynu2V8PsWo33P3Wpm_5AyAKnc35MB2wCpLpk5vPGuv7KtoWjYI6WCt_C2705SkdhL3tOZjq0tYRTvGbrEw4oG7miiRz9f0n2-Ax9FMmWxfCki0o9t1r7bQw1fhwtL7LCTdgs6DifAbVqo1gpTmYrfmRlwmEqLUhVYRPlqNsCoaxyia1Y9IpJXfB-ejTfA8k41k0KahRwaf3XiYJ4YQWcmCsRbRrZoXG5apkSiGBsFWskkjZZTzAE",
-            stats: 5,
-            category: "backend",
+            title: "Unitrail",
+            rank: "A",
+            status: "Active",
+            description: "Comprehensive study abroad consultancy platform helping students navigate their international education journey with ease.",
+            mode: "Medium Mode",
+            difficultyColor: "text-blue-400",
+            bgImage: "/projects/unitrail.png",
+            link: "https://unitrail.vercel.app/",
+            stats: 4,
+            category: "frontend",
             weapons: [
-                { name: "GPT-4 API", icon: "psychology" },
-                { name: "Python Flask", icon: "logo_dev" }
+                { name: "Next.js", icon: "web" },
+                { name: "Tailwind", icon: "style" }
             ],
             loot: [
-                { icon: "add_circle", text: "+200 XP Prompt Engineering" }
+                { icon: "flight_takeoff", text: "Global Network Unlocked" },
+                { icon: "verified", text: "Trust Badge" }
+            ]
+        },
+        {
+            id: 4,
+            title: "ConstructPro",
+            rank: "A+",
+            status: "Building",
+            description: "All-in-one construction management web application for streaming project workflows, resource planning, and site monitoring.",
+            mode: "Hard Mode",
+            difficultyColor: "text-orange-500",
+            bgImage: "/projects/constructpro.png",
+            link: "https://constructpro-delta.vercel.app/",
+            stats: 5,
+            category: "fullstack",
+            weapons: [
+                { name: "React", icon: "construction" },
+                { name: "Dashboard", icon: "dashboard" }
+            ],
+            loot: [
+                { icon: "apartment", text: "Management Mastery" },
+                { icon: "engineering", text: "Efficiency Boost" }
+            ]
+        },
+        {
+            id: 5,
+            title: "NexuxChat",
+            rank: "B",
+            status: "Live",
+            description: "Sleek and modern personal chat application featuring real-time messaging, user profiles, and a responsive design.",
+            mode: "Normal Mode",
+            difficultyColor: "text-green-500",
+            bgImage: "/projects/nexuxchat.png",
+            link: "https://nexuxchat.onrender.com",
+            stats: 3,
+            category: "fullstack",
+            weapons: [
+                { name: "Socket.io", icon: "chat" },
+                { name: "Express", icon: "speed" }
+            ],
+            loot: [
+                { icon: "forum", text: "Communication Skills" },
+                { icon: "person", text: "Social Connectivity" }
             ]
         }
     ];
@@ -95,12 +142,12 @@ export default function MissionsPage() {
                         <div className="flex gap-6 bg-card-dark p-4 rounded-xl border border-card-dark shadow-lg">
                             <div className="flex flex-col">
                                 <span className="text-text-muted text-xs uppercase tracking-wider font-bold">Total XP</span>
-                                <span className="text-white text-2xl font-bold font-mono">12,450</span>
+                                <span className="text-white text-2xl font-bold font-mono">8,500</span>
                             </div>
                             <div className="w-px bg-white/10 h-full"></div>
                             <div className="flex flex-col">
                                 <span className="text-text-muted text-xs uppercase tracking-wider font-bold">Missions</span>
-                                <span className="text-primary text-2xl font-bold font-mono">08</span>
+                                <span className="text-primary text-2xl font-bold font-mono">05</span>
                             </div>
                         </div>
                     </div>
@@ -140,7 +187,7 @@ export default function MissionsPage() {
                     {/* Grid of Cards */}
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-4">
                         {filteredMissions.map((mission) => (
-                            <div key={mission.id} className="group h-[540px] perspective-1000 cursor-default">
+                            <div key={mission.id} className="group h-[540px] perspective-1000 cursor-pointer" onClick={() => window.open(mission.link, '_blank')}>
                                 <div className="relative w-full h-full duration-700 transition-all transform-style-3d group-hover:rotate-y-180">
                                     {/* Front Side */}
                                     <div className="absolute inset-0 w-full h-full bg-card-dark rounded-xl border border-card-dark overflow-hidden backface-hidden flex flex-col shadow-lg">
@@ -221,11 +268,11 @@ export default function MissionsPage() {
                                             </div>
                                             {/* Actions */}
                                             <div className="mt-auto flex flex-col gap-3">
-                                                <button className="w-full h-12 rounded-full bg-primary hover:bg-white text-background-dark hover:text-background-dark font-bold text-sm tracking-wide transition-all shadow-[0_0_15px_rgba(54,226,123,0.4)] hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] flex items-center justify-center gap-2">
+                                                <a href={mission.link} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="w-full h-12 rounded-full bg-primary hover:bg-white text-background-dark hover:text-background-dark font-bold text-sm tracking-wide transition-all shadow-[0_0_15px_rgba(54,226,123,0.4)] hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] flex items-center justify-center gap-2">
                                                     <span className="material-symbols-outlined text-lg">rocket_launch</span>
                                                     INITIALIZE DEMO
-                                                </button>
-                                                <button className="w-full h-12 rounded-full bg-transparent border border-primary text-primary hover:bg-primary/10 font-bold text-sm tracking-wide transition-all flex items-center justify-center gap-2">
+                                                </a>
+                                                <button onClick={(e) => e.stopPropagation()} className="w-full h-12 rounded-full bg-transparent border border-primary text-primary hover:bg-primary/10 font-bold text-sm tracking-wide transition-all flex items-center justify-center gap-2">
                                                     <span className="material-symbols-outlined text-lg">data_object</span>
                                                     SOURCE CODE
                                                 </button>

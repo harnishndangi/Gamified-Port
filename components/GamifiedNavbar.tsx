@@ -66,7 +66,7 @@ export default function GamifiedNavbar() {
                             <span className="material-symbols-outlined text-sm">person</span>
                             PROFILE
                         </Link>
-                        <Link
+                        {/* <Link
                             href="/experience"
                             className={`text-sm font-medium leading-normal flex items-center gap-2 transition-all ${isActive("/experience")
                                 ? "text-white shadow-glow-sm"
@@ -75,7 +75,7 @@ export default function GamifiedNavbar() {
                         >
                             <span className="material-symbols-outlined text-sm">map</span>
                             LOGS
-                        </Link>
+                        </Link> */}
                         <Link
                             href="/trophy-room"
                             className={`text-sm font-medium leading-normal flex items-center gap-2 transition-all ${isActive("/trophy-room")
@@ -85,16 +85,6 @@ export default function GamifiedNavbar() {
                         >
                             <span className="material-symbols-outlined text-sm">emoji_events</span>
                             TROPHIES
-                        </Link>
-                        <Link
-                            href="/power-ups"
-                            className={`text-sm font-medium leading-normal flex items-center gap-2 transition-all ${isActive("/power-ups")
-                                ? "text-white shadow-glow-sm"
-                                : "text-[#9eb7a8] hover:text-white"
-                                }`}
-                        >
-                            <span className="material-symbols-outlined text-sm">bolt</span>
-                            POWER-UPS
                         </Link>
                     </nav>
 
